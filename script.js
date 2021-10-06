@@ -52,7 +52,7 @@ let dataArr= [
 
 for(let i =0;i<dataArr.length;i++){
 let fragment = `
-  <div id="img${i+1}" class="arts">
+  <div id="${i+1}" onclick="displayArt(this)" class="arts">
        <img class="art_img" src="${dataArr[i].imgurl}" alt="" srcset="">
        <div class="art_bottom">
           <p id="artist">${dataArr[i].name}</p>
@@ -66,5 +66,10 @@ let fragment = `
 
 `
 artContainer.innerHTML+=fragment;
-    
+}
+
+function displayArt(art){
+   let key = art.id;
+//    sessionStorage.setItem(key,JSON.stringify(dataArr[key-1]));
+   window.location.href="./display.html";
 }

@@ -91,6 +91,7 @@
 .arts{
     width: 300px;
     height: 350px;
+    cursor: pointer;
 }
 
 .art_img{
@@ -112,6 +113,7 @@
 
 .heart{
     color: #fc3939;
+    cursor: pointer;
 }
 
 .star{
@@ -120,4 +122,73 @@
 
 .eye{
     color: rgba(0, 89, 255, 0.788);
+}
+
+
+
+/* display page styles */
+
+.display_top{
+    width: 98%;
+    margin: auto;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.display_top img{
+    width: 700px;
+    height: 530px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 35px rgba(75, 74, 74, 0.815);
+}
+
+.art_des{
+    width: 50%;
+    margin-top: 30px;
+}
+
+.art_des h2{
+    font-size: 30px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.art_des p{
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.art_des div{
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    padding-top: 40px;
+}
+
+.art_des div i span{
+    color: black;
+    font-weight: 500;
+}
+
+.art_des button{
+    width: 100%;
+    color: #F8F8F8;
+    padding: 10px 0;
+    border: none;
+    border-radius: 60px;
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 300;
+    cursor: pointer;
+    box-shadow: 0px 15px 40px rgba(83, 82, 82, 0.555);
+}
+
+.buyBtn{
+    background-color: #7879F1;
+}
+
+.sponBtn{
+    background-color: #EF5DA8;
 }
