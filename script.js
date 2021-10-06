@@ -1,6 +1,14 @@
 let artContainer = document.getElementById("art-conatiner");
 let star=["3.0","3.5","4.0","4.5"];
 
+document.getElementsByClassName('logo')[0].addEventListener('click',()=>{
+    location.href="./index.html";
+})
+
+document.getElementsByClassName('nav_item')[0].addEventListener('click',()=>{
+    location.href="./index.html";
+})
+
 function DataObj(name,imgurl,star,heart,view){
     this.name=name;
     this.imgurl=imgurl;
@@ -70,6 +78,6 @@ artContainer.innerHTML+=fragment;
 
 function displayArt(art){
    let key = art.id;
-//    sessionStorage.setItem(key,JSON.stringify(dataArr[key-1]));
+   sessionStorage.setItem("key",JSON.stringify(dataArr[key-1]));
    window.location.href="./display.html";
 }

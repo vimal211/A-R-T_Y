@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./images/splash.png" type="image/x-icon"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARTY</title>
     <link rel="stylesheet" href="./style.css">
@@ -16,30 +17,18 @@
                 <p class="nav_item">Discover</p>
             </div>
             <div class="nav_right">
-                <p id='login' class="nav_item">Login</p>
+                <p id='login' class="nav_item">Logout</p>
                 <img class="profile_pic" src="./Images/profile.jpg" alt="" srcset="">
             </div>
         </div>
 
-        <div class="display_top">
-            <img src="./Images/img4.jpg" alt="" srcset="">
-            <div class="art_des">
-                <h2>Happy Goldy</h2>
-                <p>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repudiandae qui obcaecati quidem eum dolorum vero, amet veritatis maxime error cumque deserunt cum voluptates assumenda consequatur! Corporis earum est consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur eveniet similique dolor et a? Modi quisquam, impedit veritatis magnam quaer</p>
-                <div>
-                    <i class=" heart far fa-heart"><span>60,245</span></i>
-                    <i class=" star fas fa-star"><span>4.5 star</span></i>
-                    <i class=" eye fas fa-eye"><span>1,45,625</span></i>
-                </div>
-                <button class="buyBtn"> Buy</button> <br>
-                <button class="sponBtn">Sponser</button>
-            </div>
+        <div class="display_top"></div>
         </div>
 
         <div class="display_bottom">
             <div class="display_comments">
                 <p>Drop your thoughts</p>
-                <input placeholder="Add your comment" type="text"> <button>Add</button>
+                <input id="input" placeholder="Add your comment" type="text"> <button id="addBtn">Add</button>
                 <div id="comment">
                     <p><i class="fas fa-user-circle"></i>Vishal<span>Great work mate👍</span></p>
                     <p><i class="fas fa-user-circle"></i>Simran<span>Awoesom work ️‍🔥</span></p>
@@ -58,5 +47,7 @@
             </div>
         </div>
     </div>
+
+    <script src="./display.js"></script>
 </body>
 </html>
