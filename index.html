@@ -25,10 +25,25 @@
             <h1> Are you an aesthete?</h1>
             <div class="main_heading2">
                 <p>Check out some of today's popular arts</p>
-                <button>Upload</button>
+                <button id="uploadBtn">Upload</button>
             </div>
         </div>
         <div id="art-conatiner"></div>
+
+        <div id="uploadForm">
+            <form id="form">
+                <div id="closeForm"><i class="fas fa-window-close"></i></div>
+                <label>
+                    <p>Enter the title:</p>
+                    <input id="newTitle" placeholder="Art Title" type="text">
+                </label>
+                <label>
+                    <p>Select your art:</p>
+                    <input id="newImg" class="imgInput" accept="image/*" type="file">
+                </label>
+                <input id = "formBtn" type="button" value="Upload">
+            </form>
+        </div>
     </div>
 
 
