@@ -8,7 +8,7 @@ loginBtn.onclick = () =>{
     let pass = document.getElementById("pass").value; 
 
     if(email===userEmail && pass === userPass){
-        window.location.href = "./index.html"
+        window.location.href = "./pages/main.html"
     }
 
     else{

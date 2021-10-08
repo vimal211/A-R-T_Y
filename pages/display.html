@@ -17,8 +17,8 @@
                 <p class="nav_item">Discover</p>
             </div>
             <div class="nav_right">
-                <p id='login' class="nav_item">Logout</p>
-                <img class="profile_pic" src="./Images/profile.jpg" alt="" srcset="">
+                <p id='logout' class="nav_item">Logout</p>
+                <img class="profile_pic" src="../Images/profile.jpg" alt="" srcset="">
             </div>
         </div>
 
@@ -36,13 +36,14 @@
             <div class="display_rating">
                 <p>Give rating</p>
                 <div>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
+                    <i onclick="executeRating(1)" class="star far fa-star"></i>
+                    <i onclick="executeRating(2)" class="star far fa-star"></i>
+                    <i onclick="executeRating(3)" class="star far fa-star"></i>
+                    <i onclick="executeRating(4)" class="star far fa-star"></i>
+                    <i onclick="executeRating(5)" class="star far fa-star"></i>
                 </div>
                 <button class="submitBtn">Submit</button>
+                <h4 id="your_rating"></h4>
             </div>
         </div>
     </div>
