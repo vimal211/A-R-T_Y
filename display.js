@@ -10,7 +10,7 @@ if(obj.heart !==0){
 
 let view = 1;
 if(obj.view !==0){
-    view = obj.heart + (Math.floor(Math.random()*(999-100)+100)).toString();
+    view = obj.view + (Math.floor(Math.random()*(999-100)+100)).toString();
 }
 
 let fragment = `
@@ -56,6 +56,11 @@ document.getElementsByClassName('logo')[0].addEventListener('click',()=>{
 document.getElementsByClassName('nav_item')[0].addEventListener('click',()=>{
     location.href="./index.html";
 })
+
+if(likes!==0){
+     document.getElementById('comment').innerHTML=`<p><i class="fas fa-user-circle"></i>Vishal<span>Great work mate👍</span></p>
+     <p><i class="fas fa-user-circle"></i>Simran<span>Awoesom work ️‍🔥</span></p>`
+}
 
 document.getElementById('addBtn').addEventListener('click',()=>{
     let comment = document.getElementById('input').value;

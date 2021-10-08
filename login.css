@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+    color: aliceblue;
+
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.login__left{
+   background: url("./Images/login3.jpg");
+   background-color: #fd848471;
+   background-size: cover;
+   background-blend-mode: lighten; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 50%;
+}
+
+.login__left h2{
+    font-size: 180px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 30px;
+    color: beige;
+}
+
+.login__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+}
+
+form{
+    width: 450px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    color: #FF6A6A;
+}
+
+form p{
+    font-size: 30px;
+    font-weight: 300;
+    padding: 20px 0;
+    color: #FF6A6A;
+
+}
+
+form input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: black;
+    background-color:white;
+    border-bottom: 2px solid #FF6A6A;
+}
+
+form input::placeholder{
+    color: #f88d8d;
+    font-size: 15px;
+}
+
+form input:focus{
+    outline: none;
+}
+
+form button{
+    padding: 10px 30px;
+    color: aliceblue;
+    background-color: #FF6A6A;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0px 3px 5px rgba(83, 82, 82, 0.555);
+    cursor: pointer;
+}
+
+.login__right h1{
+    font-size: 60px;
+    color: #e65050e0;
+    margin-left: -10px;
+}
+
+.login__right div p{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.719);
+}
+
+.error{
+    display: none;
+    color: black;
+    background-color:rgba(255, 0, 0, 0.63);
+    padding: 20px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 60px;
+}

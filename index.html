@@ -17,7 +17,7 @@
                 <p class="nav_item">Discover</p>
             </div>
             <div class="nav_right">
-                <p id='login' class="nav_item">Logout</p>
+                <p id='logout' class="nav_item">Logout</p>
                 <img class="profile_pic" src="./Images/profile.jpg" alt="" srcset="">
             </div>
         </div>
@@ -41,7 +41,8 @@
                     <p>Select your art:</p>
                     <input id="newImg" class="imgInput" accept="image/*" type="file">
                 </label>
-                <input id = "formBtn" type="button" value="Upload">
+                <input style="cursor: pointer;" id = "formBtn" type="button" value="Upload">
+                <p id="error">!All Fields are required!</p>
             </form>
         </div>
     </div>

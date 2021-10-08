@@ -62,23 +62,23 @@ let dataArr= [
 ]
 
 function dispaly(){
-
-for(let i =0;i<dataArr.length;i++){
-let fragment = `
-  <div id="${i+1}" onclick="displayArt(this)" class="arts">
-       <img class="art_img" src="${dataArr[i].imgurl}" alt="" srcset="">
-       <div class="art_bottom">
-          <p id="artist">${dataArr[i].name}</p>
-          <div>
-          <i class=" star fas fa-star"></i>${dataArr[i].star}
-          <i class=" heart fas fa-heart"></i>${dataArr[i].heart}k
-          <i class=" eye fas fa-eye"></i>${dataArr[i].view}k
-          </div>
-       </div>
-  </div>
-`
-artContainer.innerHTML+=fragment;
-}
+    artContainer.innerHTML=``;
+    for(let i =0;i<dataArr.length;i++){
+    let fragment = `
+    <div id="${i+1}" onclick="displayArt(this)" class="arts">
+        <img class="art_img" src="${dataArr[i].imgurl}" alt="" srcset="">
+        <div class="art_bottom">
+            <p id="artist">${dataArr[i].name}</p>
+            <div>
+            <i class=" star fas fa-star"></i>${dataArr[i].star}
+            <i class=" heart fas fa-heart"></i>${dataArr[i].heart}k
+            <i class=" eye fas fa-eye"></i>${dataArr[i].view}k
+            </div>
+        </div>
+    </div>
+    `
+    artContainer.innerHTML+=fragment;
+    }
 }
 
 dispaly();
@@ -102,14 +102,20 @@ document.getElementById('closeForm').onclick=()=>{
 document.getElementById('formBtn').onclick=()=>{
     let newTitle = document.getElementById('newTitle').value;
     let newImg =  document.getElementById('newImg');
-    const objectURL = URL.createObjectURL(newImg.files[0]);
+    if(newTitle.length>3 && newImg){
+        const objectURL = URL.createObjectURL(newImg.files[0]);
+        dataArr.push((new DataObj("Vimal",objectURL,0,0,0,newTitle)));
+        dispaly();
+        document.getElementById('art-conatiner').style.filter = "blur(0)";
+        document.getElementById('uploadForm').style.display = "none";
+    }
+    else{
+        document.getElementById('error').style.display = "inherit"
+    }
+    
 
+}
 
-    console.log(objectURL);
-
-    dataArr.push((new DataObj("Vimal",objectURL,0,0,0,newTitle)));
-    dispaly();
-    document.getElementById('art-conatiner').style.filter = "blur(0)";
-    document.getElementById('uploadForm').style.display = "none";
-
+document.getElementById("logout").onclick = () =>{
+    window.location.href = "./login.html"
 }
