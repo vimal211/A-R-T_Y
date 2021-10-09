@@ -73,7 +73,7 @@ document.getElementById('addBtn').addEventListener('click',()=>{
 let rateStar = 0;
 
 function executeRating(stars) {
-    if(likes === 0){
+    if(likes <2){
         window.alert("You Can't rate your own art!!")
     } else{
         rateStar = stars;
@@ -83,7 +83,7 @@ function executeRating(stars) {
         for(let i =0;i<stars;i++){
            (ratingStar[i].className = starClassActive)
         }
-        for(let j=ratingStar.length-1;j>stars;j--){
+        for(let j=ratingStar.length-1;j>=stars;j--){
            (ratingStar[j].className = starClassInactive);
         }
         if(rateStar>0){
@@ -95,11 +95,7 @@ function executeRating(stars) {
   }
 
 document.getElementsByClassName('submitBtn')[0].onclick = () =>{
-    if(rateStar>0){
-
-        finalRating(rateStar);
-    }
-    
+     finalRating(rateStar); 
 }
 
 function finalRating(rate){
