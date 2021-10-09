@@ -1,11 +1,11 @@
 # ARTY
 
-This application is the combination of social media and e-commerce. Basically it was inspired from <strong>dribbble.com</strong> 
+This application is a combination of social media and e-commerce. Basically, it was inspired by <strong>dribbble.com</strong> 
 <ul>
-  <li>Dribble is mostly used by Graphic Designers to show case their works.</li>
-  <li>Where as the concept of ARTY is similar to that where real world aritst who create Painting arts, Pencil art, etc. publish their works to the outer world.</li>
+  <li>Dribble is mostly used by Graphic Designers to showcase their works.</li>
+  <li>Whereas the concept of ARTY is similar to that where the real-world artist who creates Painting arts, Pencil art, etc. publish their works to the outer world.</li>
   <li> People can like,comment and give ratings to the art</li>
-  <li>People can sponser the artist by filling the form in the application</li>
+  <li>People can sponsor the artist by filling the form in the application</li>
   <li><h3>It was just a frontend application, I developed this to implement my learnings in Frontend Development</h3></li>
 </ul>
 
