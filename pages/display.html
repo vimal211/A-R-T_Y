@@ -46,6 +46,38 @@
                 <h4 id="your_rating"></h4>
             </div>
         </div>
+        <div style="display: none;" id="sponserForm">
+            <form>
+                <div style="text-align: end;font-size:30px; cursor: pointer;" id="closeForm"><i class="fas fa-window-close"></i></div>
+                <label for="Name">
+                    <p>Full Name:</p><input required placeholder="full name" class="input_box" type="text">
+                </label>
+                <label for="Age">
+                    <p>Age:</p><input required placeholder="age" class="input_box" type="number">
+                </label>
+                <label for="email">
+                    <p>Email</p><input required placeholder="email address" class="input_box" type="email">
+                </label>
+                <label for="Phone">
+                    <p>Mobile No:</p><input required placeholder="mobile number" class="input_box" type="number">
+                </label>
+                <label for="Address">
+                    <p>Home Address:</p><input required placeholder="house address" class="input_box" type="text">
+                </label>
+                <label for="Office">
+                    <p>Office Address:</p><input required placeholder="office address" class="input_box" type="text">
+                </label>
+                <label for="National ID">
+                    <p>Upload Your Nation ID: </p>
+                    <input required type="file">
+                </label>
+                <label for="Message">
+                    <p>Type your message</p>
+                    <input required class="input_box" placeholder="message" type="test">
+                </label>
+                <input id="FormSponserBtn" type="submit" value="Send Mail">
+            </form>
+        </div>
     </div>
 
     <script src="./display.js"></script>

@@ -236,11 +236,11 @@
     box-shadow: 0px 15px 40px rgba(83, 82, 82, 0.555);
 }
 
-.buyBtn{
+#buyBtn{
     background-color: #7879F1;
 }
 
-.sponBtn{
+#sponBtn{
     background-color: #EF5DA8;
 }
 
@@ -334,5 +334,53 @@
     width: 80%;
     margin-top: 10px;
     padding: 30px 0;
+}
+
+#sponserForm{
+    position: absolute;
+    top:15%;
+    left: 35%;
+    background-color: #EF5DA8;
+    color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: flex-start;
+    padding: 30px;
+    width: 40%;
+}
+
+#sponserForm form{
+    width: 100%;
+}
+
+#sponserForm p{
+    font-size: 30px;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+.input_box{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+}
+.input_box:focus{
+    outline: none;
+}
+.input_box::placeholder{
+    color: #4d4a4aa8;
+}
+
+#FormSponserBtn{
+    padding: 10px 20px;
+    margin: 30px 35%;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px rgba(146, 145, 145, 0.555);
+    color: #f1479f;
+    font-size:larger ;
 }
 

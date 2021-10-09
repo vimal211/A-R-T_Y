@@ -23,8 +23,8 @@ let fragment = `
         <i style="color:#ecd616" class=" fas fa-star"><span>${obj.star} star</span></i>
         <i class=" eye fas fa-eye"><span>${view}</span></i>
     </div>
-    <button class="buyBtn"> Buy</button> <br>
-    <button class="sponBtn">Sponser</button>
+    <button id="buyBtn"> Buy</button> <br>
+    <button id="sponBtn">Sponser</button>
 ` ;
 
 displayTop.innerHTML = fragment;
@@ -56,6 +56,25 @@ document.getElementsByClassName('logo')[0].addEventListener('click',()=>{
 document.getElementsByClassName('nav_item')[0].addEventListener('click',()=>{
     location.href="./main.html";
 })
+
+// buy section
+document.getElementById('buyBtn').onclick = () =>{
+    window.alert("You will be notified 2 hours before the start of auction for this art!!")
+}
+//buy and sponser section
+
+document.getElementById('sponBtn').onclick = () =>{
+    document.getElementsByClassName("display_top")[0].style.filter = "blur(30px)"
+    document.getElementsByClassName("display_bottom")[0].style.filter = "blur(30px)"
+    document.getElementById("sponserForm").style.display="inherit";
+}
+document.getElementById('closeForm').onclick=()=>{
+    document.getElementsByClassName("display_top")[0].style.filter = "blur(0)"
+    document.getElementsByClassName("display_bottom")[0].style.filter = "blur(0)"
+    document.getElementById("sponserForm").style.display="none";
+}
+
+//comment section
 
 if(likes!==0){
      document.getElementById('comment').innerHTML=`<p><i class="fas fa-user-circle"></i>Vishal<span>Great work mate👍</span></p>
@@ -95,7 +114,9 @@ function executeRating(stars) {
   }
 
 document.getElementsByClassName('submitBtn')[0].onclick = () =>{
-     finalRating(rateStar); 
+    if(rateStar>0){
+        finalRating(rateStar); 
+    }   
 }
 
 function finalRating(rate){
@@ -113,8 +134,7 @@ function finalRating(rate){
     document.getElementsByClassName('submitBtn')[0].style.backgroundColor="#ff6a6a96"   
 }
 
-
 //logout section
 document.getElementById("logout").onclick = () =>{
-    window.location.href = "../login.html";
+    window.location.href = "../index.html";
 }
