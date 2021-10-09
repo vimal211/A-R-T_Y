@@ -117,5 +117,5 @@ document.getElementById('formBtn').onclick=()=>{
 }
 
 document.getElementById("logout").onclick = () =>{
-    window.location.href = "../login.html"
+    window.location.href = "../index.html"
 }
