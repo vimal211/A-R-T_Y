@@ -17,7 +17,7 @@ This application is the combination of social media and e-commerce. Basically it
 
    
 # Login Details
-  <h3><a href="https://vimal211.github.io/ARTY/">Demo link</a></h3>
+  <h3><a target="_blank" href="https://vimal211.github.io/ARTY/">Demo link</a></h3>
 <strong>Email: </strong>vimal@gmail.com <br>
 <strong>Password: </strong>vimal123
 
